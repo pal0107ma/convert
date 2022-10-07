@@ -3,7 +3,7 @@ import moviepy.editor
 def askFileName():
     while(True):
         try:
-            mp4_file = input('File name (sample.mp4): ')
+            mp4_file = input('\nFile name (sample.mp4): ')
 
             if (mp4_file[len(mp4_file)-4:len(mp4_file)]!= '.mp4'):
                 print('Error: '+'"'+mp4_file+'"'+' is not a valid name!')
@@ -27,7 +27,6 @@ def askFileName():
             print('Error: no such file!')
         finally:
             again = input('\nWould you like try again? [Y/n] ')
-            print('')
             if(again == 'y' or again == 'Y'):
                 continue
             else:
